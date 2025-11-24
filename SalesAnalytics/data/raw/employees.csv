@@ -1,0 +1,11 @@
+employee_id,name,department,base_salary
+1,Employee_1,Sales,28000
+2,Employee_2,Sales,30000
+3,Employee_3,Sales,32000
+4,Employee_4,Sales,35000
+5,Employee_5,Operations,27000
+6,Employee_6,Operations,29000
+7,Employee_7,Operations,31000
+8,Employee_8,Finance,40000
+9,Employee_9,Finance,45000
+10,Employee_10,HR,26000

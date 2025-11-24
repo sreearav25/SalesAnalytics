@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTarget="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D13A6605-FAE5-4BBC-A8C8-D7F63D407DF4}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>src\main_app.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>SalesAnalytics</Name>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src\main_app.py" />
+    <Compile Include="src\company.py" />
+    <Compile Include="src\analysis.py" />
+    <Compile Include="src\app_streamlit.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="data\raw\company_sales_salary.csv" />
+    <Content Include="data\raw\employees.csv" />
+    <Content Include="notebooks\01_sales_salary_analy.ipynb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\" />
+    <Folder Include="data\raw\" />
+    <Folder Include="notebooks\" />
+    <Folder Include="src\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
